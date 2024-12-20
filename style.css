@@ -6,13 +6,28 @@
     scroll-behavior: smooth; /* Smooth scrolling for navigation */
 }
 
+/* Body Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
-    background-color: #0e0e0e;
+    background-color: #102131; /* Updated body background */
     line-height: 1.8;
 }
 
+/* Canvas Styles */
+#container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    transform: rotate(45deg); /* Adds rotation effect */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/* Anchor Tag Styles */
 a {
     color: #1e90ff;
     text-decoration: none;
@@ -23,6 +38,7 @@ a:hover {
     color: #63c5da;
 }
 
+/* Container Utility */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -66,15 +82,15 @@ header nav a:hover {
 
 /* Profile Icon */
 .profile-icon {
-    width: 35px; /* Icon size */
+    width: 35px;
     height: 35px;
-    margin-right: 10px; /* Space between the icon and the name */
-    vertical-align: middle; /* Align icon with text */
-    transition: transform 0.3s ease; /* Smooth effect */
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
 }
 
 .profile-icon:hover {
-    transform: scale(1.2); /* Slight enlargement on hover */
+    transform: scale(1.2);
 }
 
 /* Hero Section */
@@ -137,9 +153,9 @@ header nav a:hover {
 
 /* Section Styles */
 section {
-    margin: 60px 0; /* Space between sections */
+    margin: 60px 0;
     padding: 60px 20px;
-    opacity: 0; /* Fade-in default state */
+    opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }

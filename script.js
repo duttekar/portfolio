@@ -214,3 +214,23 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => loader.remove(), 500);
   }, 3000); // Simulated loading time
 });
+
+// Open the Modal
+function openModal() {
+  var modal = document.getElementById("certificationsModal");
+  modal.style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  var modal = document.getElementById("certificationsModal");
+  modal.style.display = "none";
+}
+
+// Close the Modal when clicking anywhere outside the modal content
+window.onclick = function(event) {
+  var modal = document.getElementById("certificationsModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
